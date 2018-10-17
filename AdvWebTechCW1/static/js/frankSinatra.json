@@ -1,0 +1,12 @@
+{
+        "albums":[
+                        {
+                        "name":"Come Fly with Me",
+                        "albumURL":"static/img/comeFlyWithMe.jpg",
+                        "songs":[{"name":"Come Fly with Me","length":3.24},{"name":"Around the World","length":3.21},{"name":"Isle of Capri","length":2.28}]
+                        },
+                        {"name":"In the Wee Small Hours of the Morning",
+                         "albumURL":"static/img/inTheWeeSmallHoursOfTheMorning.jpg",
+                         "songs":[{"name":"I'll Wind","length":3.25},{"name":"Dancing on the Ceiling","length":2.57},{"name":"This Love of Mine","length":3.33}]}
+                 ]
+}

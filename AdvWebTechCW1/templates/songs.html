@@ -1,0 +1,20 @@
+{%extends "base.html"%}
+{%block content%}
+
+	  <div class="col-xs-6 col-md-3">
+     <img src="{{url_for('static', filename='')}}" alt="...">
+    </a>
+  </div>
+</div> 
+
+<div class="col-md-3">
+  <ul class="list-group">
+	{%for song in songNames%}
+		<li class="list-group-item row">
+			<div class="col-md-9">{{song}}</div>
+			<div class="col-md-3">{{songLength[loop.index0]}}</div>
+		</li>
+	{%endfor%}
+ </ul>
+</div>
+{%endblock%}
