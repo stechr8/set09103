@@ -1,20 +1,25 @@
 {%extends "base.html"%}
 {%block content%}
 
-	  <div class="col-xs-6 col-md-3">
-     <img src="{{url_for('static', filename='')}}" alt="...">
-    </a>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+       <img src="{{url_for('static', filename=url)}}" alt="..." style="width:335px;height:195.23px;">
+      <div class="caption">
+        <h3>{{name}}</h3>
+      </div>
+    </div>
   </div>
-</div> 
-
-<div class="col-md-3">
-  <ul class="list-group">
-	{%for song in songNames%}
-		<li class="list-group-item row">
-			<div class="col-md-9">{{song}}</div>
-			<div class="col-md-3">{{songLength[loop.index0]}}</div>
-		</li>
-	{%endfor%}
- </ul>
 </div>
+
+     	<div class="col-md-3">
+	  <ul class="list-group">
+		{%for song in songNames%}
+			<li class="list-group-item row">
+				<div class="col-md-9">{{song}}</div>
+				<div class="col-md-3">{{songLength[loop.index0]}}</div>
+			</li>
+		{%endfor%}
+	 </ul>
+	</div>
 {%endblock%}

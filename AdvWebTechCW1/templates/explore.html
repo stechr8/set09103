@@ -8,7 +8,7 @@
  
 <div class="col-sm-6 col-md-4">
 	<div>
-	<a href="/{{category}}/{{currentCat}}"><img src="{{catURL[loop.index0]}}" alt="..." class="img-circle" style="width:335px;height:195.23px;"></a>
+	<a href="/{{category}}/{{currentCat}}"><img src="{{url_for('static', filename=catURL[loop.index0])}}" alt="..." class="img-circle" style="width:335px;height:195.23px;"></a>
 	 <div class="caption">
        		 <h3><a href="/{{category}}/{{currentCat}}">{{currentCat}}</a></h3>
       	 </div>
@@ -21,7 +21,7 @@
 {%for album in albumName%}
 	<div class="col-sm-6 col-md-4">
         <div>
-        <a href="/{{category}}/{{album}}"><img src="{{albumURL[loop.index0]}}" alt="..." class="thumbnail" style="width:335px;height:195.23px;"></a>
+        <a href="/{{category}}/{{album}}"><img src="{{url_for('static', filename=albumURL[loop.index0])}}" alt="..." class="thumbnail" style="width:335px;height:195.23px;"></a>
          <div class="caption">
                  <h3><a href="/{{category}}/{{album}}">{{album}}</a></h3>
          </div>

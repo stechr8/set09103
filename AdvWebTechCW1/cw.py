@@ -28,8 +28,7 @@ def getArtistURLs(genre):
 			if data['genre'][i]['name'] == genre:
 				for j in range(len(data['genre'][i]['artist'])):
 					artistUrlList.append(data['genre'][i]['artist'][j]['artistURL'])
-					print "/////////" + artistUrlList[j]
-	
+						
 	return artistUrlList
 
 def getAlbumNameList(name):
@@ -156,12 +155,30 @@ def getSongs(name):
         	                 for j in range(len(data['genre'][i]['artist'])):
                 	         	for k in range(len(data['genre'][i]['artist'][j]['albums'])):
 						if data['genre'][i]['artist'][j]['albums'][k]['name'] == name:
-                	   		             albumUrl = (data['genre'][i]['artist'][j]['albums'][k]['albumURL'])
-
+							albumURL = data['genre'][i]['artist'][j]['albums'][k]['albumURL']
+							
         songList = getSongList(name)
-	print "/a/a/a/a/ " + songList[0]
         lengthList = getLengthList(name)
-	return render_template('songs.html', url=albumURL, songNames=songList, songLength=lengthList)
+	return render_template('songs.html', url=albumURL, songNames=songList, songLength=lengthList, name=name)
+
+@app.route('/allArtists')
+def allArtists():
+	with open(filename, 'r') as f:
+                data = json.load(f)
+
+                artistNameList = []
+
+                for i in range(len(data['genre'])):
+			for j in range(len(data['genre'][i]['artist'])):
+        	                artistNameList.append(data['genre'][i]['artist'][j]['name'])
+
+		artistUrlList = []
+
+                for i in range(len(data['genre'])):
+                	for j in range(len(data['genre'][i]['artist'])):
+                        	artistUrlList.append(data['genre'][i]['artist'][j]['artistURL'])
+
+	return render_template('explore.html', category="artist", catList=artistNameList, catURL=artistUrlList), 200
 
 if __name__ == "__main__":
 	init(app)

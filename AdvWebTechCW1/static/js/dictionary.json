@@ -1,113 +1,113 @@
 {"genre":[{"name":"Folk",
-		"genreURL":"static/img/passenger.png",
+		"genreURL":"img/passenger.png",
 		"artist":[{"name":"Passenger",	
-			"artistURL":"static/img/passenger.png",
+			"artistURL":"img/passenger.png",
  	           "albums":[{"name":"Little Lights",
-                   "albumURL":"static/img/littleLights.jpg",
+                   "albumURL":"img/littleLights.jpg",
                    "songs":[{"name":"Staring at the Stars","length":3.24},{"name":"Let Her Go","length":4.12},{"name":"Circles","length":3.09}]},
                   {"name":"Whispers",
-                   "albumURL":"static/img/whispers.jpg",
+                   "albumURL":"img/whispers.jpg",
                    "songs":[{"name":"Bullets","length":3.05},{"name":"Thunder","length":4.02},{"name":"Start a Fire","length":3.45}]}
                  ]}
 	,
 			{"name":"Mumford and Sons",
-			"artistURL":"static/img/mumford.jpg",
+			"artistURL":"img/mumford.jpg",
 			"albums":[
 			 {"name":"Babel",
-                        "albumURL":"static/img/babel.jpg",
+                        "albumURL":"img/babel.jpg",
                         "songs":[{"name":"Babel","length":3.24},{"name":"I Will Wait","length":3.15},{"name":"Reminder","length":5.21}]
                         },
                         {"name":"Sigh No More",
-                         "albumURL":"static/img/sighNoMore.jpg",
+                         "albumURL":"img/sighNoMore.jpg",
                          "songs":[{"name":"The Cave","length":3.05},{"name":"Little Lion Man","length":4.00},{"name":"Winter Winds","length":3.15}]}]},
 		
 			{"name":"Ben Howard",
-			"artistURL":"static/img/benHoward.jpg",
+			"artistURL":"img/benHoward.jpg",
 			 "albums":[
                         {
                         "name":"Every Kingdom",
-                        "albumURL":"static/img/everyKingdom.jpg",
+                        "albumURL":"img/everyKingdom.jpg",
                         "songs":[{"name":"Gracious","length":4.04},{"name":"Old Pine","length":3.12},{"name":"The Wolves","length":3.49}]
                         },
                         {"name":"I Forget Where We Were",
-                         "albumURL":"static/img/iForgetWhereWeWere.jpg",
+                         "albumURL":"img/iForgetWhereWeWere.jpg",
                          "songs":[{"name":"Small Things","length":3.35},{"name":"Conrad","length":3.00},{"name":"In Dreams","length":3.35}]}
                  ]}]},
 	{"name":"Jazz",
-		"genreURL":"static/img/ninaSimone.jpg",
+		"genreURL":"img/ninaSimone.jpg",
        		 "artist":[
 			{"name":"Frank Sinatra",
-			"artistURL":"static/img/frankSinatra.jpg",
+			"artistURL":"img/frankSinatra.jpg",
 			"albums":[
                         {
                         "name":"Come Fly with Me",
-                        "albumURL":"static/img/comeFlyWithMe.jpg",
+                        "albumURL":"img/comeFlyWithMe.jpg",
                         "songs":[{"name":"Come Fly with Me","length":3.24},{"name":"Around the World","length":3.21},{"name":"Isle of Capri","length":2.28}]
                         },
                         {"name":"In the Wee Small Hours of the Morning",
-                         "albumURL":"static/img/inTheWeeSmallHoursOfTheMorning.jpg",
+                         "albumURL":"img/inTheWeeSmallHoursOfTheMorning.jpg",
                          "songs":[{"name":"I'll Wind","length":3.25},{"name":"Dancing on the Ceiling","length":2.57},{"name":"This Love of Mine","length":3.33}]}
                  ]},
 			{"name":"Nina Simone",
-			"artistURL":"static/img/ninaSimone.jpg",
+			"artistURL":"img/ninaSimone.jpg",
 			"albums":[
                         {
                         "name":"I Put a Spell on You",
-                        "albumURL":"static/img/iPutASpellOnYou.jpg",
+                        "albumURL":"img/iPutASpellOnYou.jpg",
                         "songs":[{"name":"Take Care of Business","length":2.03},{"name":"Beautiful Land","length":1.54},{"name":"Feeling Good","length":2.28}]
                         },
                         {"name":"Here Comes the Sun",
-                         "albumURL":"static/img/hereComesTheSun.jpg",
+                         "albumURL":"img/hereComesTheSun.jpg",
                          "songs":[{"name":"Just Like a Woman","length":4.53},{"name":"Mr. Bojangles","length":5.03},{"name":"My Way","length":5.48}]}
                  ]},
 			{"name":"Nat King Cole",
-			"artistURL":"static/img/natKingCole.jpg",
+			"artistURL":"img/natKingCole.jpg",
 			"albums":[
                         {
                         "name":"Love is the Thing",
-                        "albumURL":"static/img/loveIsTheThing.jpg",
+                        "albumURL":"img/loveIsTheThing.jpg",
                         "songs":[{"name":"When I Fall in Love","length":3.11},{"name":"Stardust","length":3.15},{"name":"Stay as Sweet as You Are","length":3.00}]
                         },
                         {"name":"After Midnight",
-                         "albumURL":"static/img/afterMidnight.jpg",
+                         "albumURL":"img/afterMidnight.jpg",
                          "songs":[{"name":"Just You, Just Me","length":3.02},{"name":"Sweet Lorraine","length":4.36},{"name":"Sometimes I'm Happy","length":4.11}]}
                  ]}]},
 		{"name":"Country",
-		"genreURL":"static/img/johnnyCash.jpg",
+		"genreURL":"img/johnnyCash.jpg",
                  "artist":[
 			{"name":"Johnny Cash",
-			"artistURL":"static/img/johnnyCash.jpg",
+			"artistURL":"img/johnnyCash.jpg",
 			"albums":[
                         {
                         "name":"At Folsom Prison",
-                        "albumURL":"static/img/atFolsomPrison.jpg",
+                        "albumURL":"img/atFolsomPrison.jpg",
                         "songs":[{"name":"Folsom Prison Blues","length":2.42},{"name":"Cocaine Blues","length":3.01},{"name":"25 Minutes to Go","length":3.31}]
                         },
                         {"name":"American Recordings",
-                         "albumURL":"static/img/americanRecordings.jpg",
+                         "albumURL":"img/americanRecordings.jpg",
                          "songs":[{"name":"Delia's Gone","length":2.18},{"name":"Let the Train Blow the Whistle","length":2.16},{"name":"The Beast in Me","length":2.46}		]}]},
 			{"name":"Luke Bryan",
-			"artistURL":"static/img/lukeBryan.jpg",
+			"artistURL":"img/lukeBryan.jpg",
 			"albums":[
                         {
                         "name":"I'll Stay Me",
-                        "albumURL":"static/img/illStayMe.jpg",
+                        "albumURL":"img/illStayMe.jpg",
                         "songs":[{"name":"All My Friends Say","length":4.03},{"name":"Baby's on the Way","length":3.21},{"name":"The Car in Front of Me","length":3.41}]
                         },
                         {"name":"What Makes You Country",
-                         "albumURL":"static/img/whatMakesYouCountry.jpg",
+                         "albumURL":"img/whatMakesYouCountry.jpg",
                          "songs":[{"name":"What Makes You Country","length":3.55},{"name":"Out of Nowhere Girl","length":3.38},{"name":"Light It Up","length":2.57}]}
                  ]},
 			{"name":"Dolly Parton",
-			"artistURL":"static/img/dollyParton.jpg",
+			"artistURL":"img/dollyParton.jpg",
 			"albums":[
                         {
                         "name":"Trio",
-                        "albumURL":"static/img/trio.jpg",
+                        "albumURL":"img/trio.jpg",
                         "songs":[{"name":"The Pain of Loving You","length":2.34},{"name":"Making Plans","length":3.39},{"name":"To Know Him Is to Love Him","length":3.50}]
                         },
                         {"name":"Pure and Simple",
-                         "albumURL":"static/img/pureAndSimple.jpg",
+                         "albumURL":"img/pureAndSimple.jpg",
                          "songs":[{"name":"Pure and Simple","length":2.43},{"name":"Say Forever You'll Be Mine","length":2.48},{"name":"Never Not Love You","length":3.35}]}
                  ]}]}
 ]}
