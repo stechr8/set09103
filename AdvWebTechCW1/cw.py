@@ -123,60 +123,73 @@ def explore():
 
 @app.route('/genre/<name>')
 def getArtist(name):
-	artists = []
-	artistURLs = []
+	try:
+		artists = getArtistNames(name)
+		artistURLs = getArtistURLs(name)
+		if artists[0] and artistURLs[0] :
+			pass
 
-	artists = getArtistNames(name)
-	artistURLs = getArtistURLs(name)
+		return render_template('explore.html', category="artist", catList=artists, catURL=artistURLs), 200
 
-	return render_template('explore.html', category="artist", catList=artists, catURL=artistURLs), 200
+	except Exception as ex:
+		return render_template('error.html', error=ex.__class__.__name__)
+		
 
 @app.route('/artist/<name>')
 def getAlbum(name):
-	albumNameList = []
-	albumUrList = []
-	albumNameList = getAlbumNameList(name)
-        albumUrlList = getAlbumURLList(name)
+	try:
+		albumNameList = getAlbumNameList(name)
+        	albumUrlList = getAlbumURLList(name)
+		if albumNameList[0] and albumUrlList[0]:
+			pass
 
-	return render_template('explore.html', category="album", albumName=albumNameList, albumURL=albumUrlList)
+		return render_template('explore.html', category="album", albumName=albumNameList, albumURL=albumUrlList)
+	except Exception as ex:
+                return render_template('error.html', error=ex.__class__.__name__)
 
 @app.route('/album/<name>')
 def getSongs(name):
-        songList = []
-        lengthList = []
-	albumURL = ""
+	try:
+		with open(filename, 'r') as f:
+			data = json.load(f)
 
-	with open(filename, 'r') as f:
-		data = json.load(f)
-
-		for i in range(len(data['genre'])):
+			for i in range(len(data['genre'])):
         	                 for j in range(len(data['genre'][i]['artist'])):
                 	         	for k in range(len(data['genre'][i]['artist'][j]['albums'])):
 						if data['genre'][i]['artist'][j]['albums'][k]['name'] == name:
 							albumURL = data['genre'][i]['artist'][j]['albums'][k]['albumURL']
 							
-        songList = getSongList(name)
-        lengthList = getLengthList(name)
-	return render_template('songs.html', url=albumURL, songNames=songList, songLength=lengthList, name=name)
+        	songList = getSongList(name)
+        	lengthList = getLengthList(name)
+		if songList[0] and lengthList[0] and albumURL!="":
+			pass
+
+		return render_template('songs.html', url=albumURL, songNames=songList, songLength=lengthList, name=name)
+
+	except Exception as ex:
+                return render_template('error.html', error=ex.__class__.__name__)
 
 @app.route('/allArtists')
 def allArtists():
-	with open(filename, 'r') as f:
-                data = json.load(f)
+	try:
+		with open(filename, 'r') as f:
+                	data = json.load(f)
+		
+			artistNameList = []
+                	for i in range(len(data['genre'])):
+				for j in range(len(data['genre'][i]['artist'])):
+        	                	artistNameList.append(data['genre'][i]['artist'][j]['name'])
 
-                artistNameList = []
+			artistUrlList = []
 
-                for i in range(len(data['genre'])):
-			for j in range(len(data['genre'][i]['artist'])):
-        	                artistNameList.append(data['genre'][i]['artist'][j]['name'])
+                	for i in range(len(data['genre'])):
+                		for j in range(len(data['genre'][i]['artist'])):
+                        		artistUrlList.append(data['genre'][i]['artist'][j]['artistURL'])
 
-		artistUrlList = []
+		return render_template('explore.html', category="artist", catList=artistNameList, catURL=artistUrlList), 200
 
-                for i in range(len(data['genre'])):
-                	for j in range(len(data['genre'][i]['artist'])):
-                        	artistUrlList.append(data['genre'][i]['artist'][j]['artistURL'])
-
-	return render_template('explore.html', category="artist", catList=artistNameList, catURL=artistUrlList), 200
+	except Exception as ex:
+                return render_template('error.html', error=ex.__class__.__name__)
 
 @app.errorhandler(404)
 def page_not_found(e):
