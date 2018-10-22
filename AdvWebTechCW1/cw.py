@@ -129,8 +129,6 @@ def getArtist(name):
 	artists = getArtistNames(name)
 	artistURLs = getArtistURLs(name)
 
-	print "/\/\/\/\/\/\/\/\/\/\/" + artistURLs[1]
-
 	return render_template('explore.html', category="artist", catList=artists, catURL=artistURLs), 200
 
 @app.route('/artist/<name>')
